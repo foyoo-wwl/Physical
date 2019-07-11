@@ -1,0 +1,103 @@
+.ph_1_content {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.physical_state {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #3d3d3d;
+    font-size: 20px;
+}
+
+.physical_state p {
+    margin-left: 133px;
+}
+
+.bmi_icon {
+    background: #00a5a0;
+    margin-left: 20px;
+}
+
+.physical_content {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.p_content_describe {
+    width: 445px;
+    height: 230px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.pcd_1 {
+    left: 0;
+    top: 0;
+}
+
+.pcd_text {
+    width: 300px;
+    height: 225px;
+    border-radius: 10px;
+    background: #eff6fe;
+    border: 2px solid #d5dde0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.pcd_text>p{
+    font-size: 20px;
+    line-height:27px;
+    color:#42474b;
+    margin-bottom:16px;
+}
+.pcd_text:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: -3px;
+    width: 15px;
+    height: 18px;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-top-width: 10px;
+    border-top-color: currentColor;
+    border-radius: 0 36px 0 0;
+    color: #d5dde0;
+}
+
+.pcd_img_wrap{
+    width:130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .pcd_bg{
+        width:130px;
+        height:110px;
+        background:url(../img/ph_1/Physical_06.png) center center no-repeat;
+        background-size: 100% 100%;
+    }
+    .pcd_img_wrap>p{
+        font-size: 20px;
+        color:#7d7d7d
+    }

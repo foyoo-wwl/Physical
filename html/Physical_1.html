@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/ph_1.css">
+</head>
+
+<body>
+    <div class="ph_1_wrap">
+        <div class="ph_1_banner imgBox">
+            <img src="../img/ph_1/Physical_02.png" alt="">
+        </div>
+        <div class="ph_1_content">
+            <div class="physical_state">
+                <p>身高:102cm</p>
+                <p>体重:24kg</p>
+                <p>BMI:23.07<span class='bmi_icon'>肥胖</span></p>
+            </div>
+            <div class="physical_content">
+                <div class="p_content_describe pcd_1">
+                    <div class='pcd_text'>
+                        <p>5-0-5横向折返跑 5s</p>
+                        <p>合格标准:<8.7s</p>
+                        <p>反应孩子周期性动作时，单位时间内快速移动得能力。与肌肉爆发力密切相关</p>
+                    </div>
+                    <div class="pcd_img_wrap">
+                        <div class="pcd_bg">
+
+                        </div>
+                        <p>位移速度</p>
+                    </div>
+                </div>
+                <!-- <div class="p_content_describe"></div>
+                <div class="p_content_describe"></div>
+                <div class="p_content_describe"></div>
+                <div class="p_content_describe"></div>
+                <div class="p_content_describe"></div> -->
+                <div id="ph_radar" style="height:330px;width:330px;"></div>
+            </div>
+        </div>
+        <div class="ph_1_footer imgBox">
+            <img src="../img/ph_1/Physical_13.png" alt="">
+        </div>
+    </div>
+    <script src="../js/echarts.js"></script>
+    <script type="text/javascript">
+        var dom = document.getElementById("ph_radar");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            title: {
+                text: ''
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                x: 'center',
+            },
+            radar: [
+                {
+                    indicator: [{
+                            text: '位移速度',
+                            max: 100
+                        },
+                        {
+                            text: '柔韧性',
+                            max: 100
+                        },
+                        {
+                            text: '下肢力量',
+                            max: 100
+                        },
+                        {
+                            text: '协调性',
+                            max: 100
+                        },
+                        {
+                            text: '平衡力',
+                            max: 100
+                        },
+                        {
+                            text: '上肢力量',
+                            max: 100
+                        }
+                    ],
+                    radius: 80,
+                    center: ['50%', '50%'],
+                }
+            ],
+            series: [{
+                    type: 'radar',
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                type: 'default'
+                            }
+                        }
+                    },
+                    data: [{
+                        value: [100, 60, 40, 100, 60,60]
+                    }]
+                }
+            ]
+        };
+
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+</body>
+
+</html>

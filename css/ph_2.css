@@ -1,0 +1,146 @@
+.ph_2_wrap{
+    width: 1290px;
+    overflow: hidden;
+    margin:0 auto;
+}
+.ph2_section{
+    width:1290px;
+    height:333px;
+    border-radius: 10px;
+    background:#e6f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.section_left{
+    width:540px;
+    margin-left: 52px;
+}
+.section_left h2{
+    font-size: 44px;
+    color:#3078ef;
+}
+.section_left h3{
+    font-size: 28px;
+    color:#333333;
+    margin-top: 23px;
+}
+.section_left h4{
+    margin-top: 23px;
+    font-size: 20px;
+    line-height: 36px;
+    color:#333333;
+}
+
+.section_right{
+    width:530px;
+    margin-right: 52px;
+    display: flex;
+    flex-direction: row;
+}
+.sr_r{
+    width:430px;
+    display: 
+}
+.sr_l_font{
+    font-size: 21px;
+    color:#999999;
+}
+.sr_bg{
+    width:430px;
+    height:106px;
+    background:url(../img/ph_2/ph2_17.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.sr_bot_icons{
+    width:430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.sr_bot_icons img{
+    width:57px;
+    margin:0 25px;
+}
+.sr_bg_tag{
+    width:110px;
+    height:74px;
+    background:url(../img/ph_2/ph2_03.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    font-size: 17px;
+    color:#fff;
+    text-indent: 40px;
+    line-height: 38px;
+}
+.sr_tag_1{
+    left:0;
+    bottom:0;
+}
+.sr_tag_2{
+    left:107.5px;
+    bottom:0;
+}
+.sr_tag_3{
+    left:215px;
+    bottom:0;
+}
+.sr_tag_4{
+    right:0;
+    bottom:0;
+}
+.sr_tag_5{
+    display: none;
+}
+.sr_bg_font{
+    width:40px;
+    position: absolute;
+    font-size: 18px;
+    color:#000033;
+    top:40px;
+    text-align: center;
+}
+.sr_bg_font_1{
+    left:90px;
+}
+.sr_bg_font_2{
+    left:195px;
+}
+.sr_bg_font_3{
+    left:300px;
+}
+.sr_l_p_1{
+    margin-top: 40px;
+}
+.sr_l_p_2{
+    margin-top: 70px;
+}
+.sr_P{
+    text-align: center;
+    font-size: 30px;
+    color:#333333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.sr_addP{
+    text-align: center;
+    font-size: 20px;
+    color:#999999;
+    line-height: 50px;
+}
+.ph_2_title{
+    font-size: 47px;
+    color:#333333;
+    height:47px;
+    text-indent: 37px;
+    margin-top: 60px;
+    line-height: 47px;
+    font-weight: bold;
+    background:url(../img/ph_2/title_icons_03.png) left center no-repeat;
+    background-size: 8px 47px;
+}
